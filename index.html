@@ -7,7 +7,7 @@
     <title>Addition</title>
   </head>
   <body>
-    <form id="form">
+    <form id="form" onsubmit="return false">
       <input type="text" id="text_01" />+
       <input type="text" id="text_02" />
       <input type="submit" />
@@ -20,7 +20,7 @@
           parseInt(document.getElementById('text_01').value) +
           parseInt(document.getElementById('text_02').value);
       };
-
+      alert('hello');
       const form = document.getElementById('form');
       const log = document.getElementById('log');
 
